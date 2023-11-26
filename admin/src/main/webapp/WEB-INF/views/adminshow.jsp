@@ -15,14 +15,16 @@ contentType="text/html; charset=UTF-8"
   	<h1>社員中身</h1>
   	<% String message = (String)request.getAttribute("message"); %>
   	<p><%= message %></p>
-  	<p><strong>役職:</strong><%= request.getAttribute("grade_name") %></p>
+  	<p><strong>社員番号</strong><%= request.getAttribute("companyid") %></p>
+  	<p><strong>役職コード</strong><%= request.getAttribute("grade") %></p>
   	<p><strong>所属:</strong><%= request.getAttribute("department") %></p>
- <%--  	<p><strong>重要度:</strong><%= request.getAttribute("status") %></p>
-  	<p><strong>メモ:</strong><%= request.getAttribute("content") %></p> --%>
+  	<p><strong>役職名</strong><%= request.getAttribute("grade_name") %></p>
+ 
+ 
   	<ul>
   		<li><p><a href="list">戻る</a></p></li>
-  		<li><p><a href='edit?id=<%= request.getAttribute("id") %>'>編集</a></p></li>
-  		<li><p><a href='destroy?id=<%= request.getAttribute("id") %>'>削除</a></p></li>
+  		<li><p><a href='edit?usersid=<%= request.getAttribute("usersid") %>'>編集</a></p></li>
+  		<li><p><a href='destroy?usersid=<%= request.getAttribute("usersid") %>'>削除</a></p></li>
   	</ul>
 </body>
 </html>

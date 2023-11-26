@@ -44,8 +44,8 @@ public class AdminListServlet extends HttpServlet {
 			while (results.next()) {
 				HashMap<String, String> columns = new HashMap<String, String>();
 				
-				String id = results.getString("id");
-				columns.put("id", id);
+				String usersid = results.getString("usersid");
+				columns.put("usersid",usersid);
 				
 				String name = results.getString("name");
 				columns.put("name", name);

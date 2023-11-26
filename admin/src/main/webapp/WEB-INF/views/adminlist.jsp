@@ -25,8 +25,8 @@ contentType="text/html; charset=UTF-8"
 	<%
 	  for (HashMap<String, String> columns : rows) {
 	%>
-	<span><%= columns.get("id") %></span>
-	<span><a href='show?id=<%= columns.get("id") %>'><%= columns.get("name") %></a></span><br>
+	<span><%= columns.get("companyid") %></span>
+	<span><a href='show?id=<%= columns.get("companyid") %>'><%= columns.get("name") %></a></span><br>
 	<% } %>
 	<p><a href="new">新規作成</a></p>
 
